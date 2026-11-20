@@ -19,6 +19,14 @@ Predicts the **next trading day's gold closing price** with two machine learning
 
 ![Top features by importance](goldcast_output/feature_importance.png)
 
+## Sample output
+
+![GoldCast terminal output with evaluation metrics and next-day prediction](docs/sample-output.png)
+
+The R² on this run is slightly negative. Because the prices are simulated as a random walk,
+there's very little real signal to learn, so the ensemble does about as well as predicting the
+average. That makes this a useful baseline before trying it on real market data.
+
 ## Tech
 
 Python · pandas · NumPy · scikit-learn · matplotlib · seaborn
